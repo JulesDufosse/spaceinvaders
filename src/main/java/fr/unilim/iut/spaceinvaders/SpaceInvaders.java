@@ -54,6 +54,8 @@ public class SpaceInvaders {
 
 		vaisseau = new Vaisseau(x, y);
 	}
+	
+	
 
 	private boolean estDansEspaceJeu(int x, int y) {
 		return (((x >= 0) && (x < longueur)) && ((y >= 0) && (y < hauteur)));
