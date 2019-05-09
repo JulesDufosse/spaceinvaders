@@ -35,6 +35,7 @@ public class Vaisseau {
 	}
 
 	private boolean estAbscisseCouverte(int x) {
+		
 		return (abscisseLaPlusAGauche() <= x) && (x <= abscisseLaPlusADroite());
 	}
 
