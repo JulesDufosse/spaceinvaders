@@ -2,8 +2,8 @@ package fr.unilim.iut.spaceinvaders;
 
 public class Vaisseau {
 
-    private Position origine;
-    private Dimension dimension;
+    Position origine;
+    Dimension dimension;
 
     public Vaisseau(int longueur, int hauteur) {
 	    this(longueur, hauteur, 0, 0);
