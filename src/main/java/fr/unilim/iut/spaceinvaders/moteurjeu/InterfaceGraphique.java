@@ -2,6 +2,8 @@ package fr.unilim.iut.spaceinvaders.moteurjeu;
 
 import javax.swing.JFrame;
 
+import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
+
 
 /**
  * cree une interface graphique avec son controleur et son afficheur
@@ -25,7 +27,7 @@ public class InterfaceGraphique  {
 	 * - construit la JFrame
 	 * - construit les Attributs
 	 * 
-	 * @param afficheurUtil l'afficheur a utiliser dans le moteur
+	 * @param dessin l'afficheur a utiliser dans le moteur
 	 * 
 	 */
 	public InterfaceGraphique(DessinJeu afficheurUtil,int x,int y)

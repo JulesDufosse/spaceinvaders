@@ -6,12 +6,15 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
+import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
+
 public class PanelDessin extends JPanel {
 
 	/**
 	 * la clase chargee de Dessiner
 	 */
 	private DessinJeu dessin;
+
 
 	/**
 	 * image suivante est l'image cachee sur laquelle dessiner

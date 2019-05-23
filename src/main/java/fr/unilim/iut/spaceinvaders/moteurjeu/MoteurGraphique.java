@@ -1,6 +1,7 @@
 package fr.unilim.iut.spaceinvaders.moteurjeu;
 
-
+import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
+import fr.unilim.iut.spaceinvaders.SpaceInvaders;
 /**
  * classe MoteurGraphique represente un moteur de jeu generique.
  * 
@@ -12,6 +13,7 @@ public class MoteurGraphique {
 	 * le jeu a executer
 	 */
 	private Jeu jeu;
+
 
 	/**
 	 * l'interface graphique
@@ -36,7 +38,6 @@ public class MoteurGraphique {
 		this.jeu = pJeu;
 		this.dessin = pAffiche;
 	}
-
 	/**
 	 * permet de lancer le jeu
 	 */
@@ -60,3 +61,4 @@ public class MoteurGraphique {
 	}
 
 }
+
