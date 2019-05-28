@@ -2,8 +2,6 @@ package fr.unilim.iut.spaceinvaders.moteurjeu;
 
 import javax.swing.JFrame;
 
-import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
-
 
 /**
  * cree une interface graphique avec son controleur et son afficheur

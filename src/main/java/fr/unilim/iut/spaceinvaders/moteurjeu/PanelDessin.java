@@ -6,8 +6,6 @@ import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
-
 public class PanelDessin extends JPanel {
 
 	/**

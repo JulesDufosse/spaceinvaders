@@ -1,7 +1,5 @@
 package fr.unilim.iut.spaceinvaders.moteurjeu;
 
-import fr.unilim.iut.spaceinvaders.DessinSpaceInvaders;
-import fr.unilim.iut.spaceinvaders.SpaceInvaders;
 /**
  * classe MoteurGraphique represente un moteur de jeu generique.
  * 
