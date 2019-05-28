@@ -11,12 +11,12 @@ public class Vaisseau extends Sprite {
 	}
 
 	public Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
-		if(this.dimension.longueur<dimensionMissile.longueur) {
+		if (this.dimension.longueur < dimensionMissile.longueur) {
 			throw new MissileException("La longueur du vaisseau est inférieur a celle du missile");
 		}
 		Position positionOrigineMissile = calculerLaPositionDeTirDuMissile(dimensionMissile);
 		return new Missile(dimensionMissile, positionOrigineMissile, vitesseMissile);
-		
+
 	}
 
 	private Position calculerLaPositionDeTirDuMissile(Dimension dimensionMissile) {
