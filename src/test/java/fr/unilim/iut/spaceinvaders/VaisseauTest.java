@@ -1,6 +1,6 @@
 package fr.unilim.iut.spaceinvaders;
 
-import org.junit.Test;
+import org.junit.Test; 
 
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
@@ -10,4 +10,5 @@ public class VaisseauTest {
 			Vaisseau vaisseau = new Vaisseau(new Dimension(5,2),new Position(5,9), 1);
 			vaisseau.tirerUnMissile(new Dimension(7,2),1);
 		}
+	 
 }

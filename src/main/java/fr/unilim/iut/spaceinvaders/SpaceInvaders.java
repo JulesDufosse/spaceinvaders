@@ -4,6 +4,7 @@ import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
 
 public class SpaceInvaders implements Jeu {
@@ -129,8 +130,13 @@ public void positionnerUnNouveauVaisseau(Dimension dimension, Position position,
   		positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
   	 }
 
-      public void tirerUnMissile(Dimension dimension, int vitesse) {
-  		this.missile = this.vaisseau.tirerUnMissile(dimension,vitesse);
-  	}
-  }
+      public void tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
+  		
+		   if ((vaisseau.hauteur()+ dimensionMissile.hauteur()) > this.hauteur )
+			   throw new MissileException("Pas assez de hauteur libre entre le vaisseau et le haut de l'espace jeu pour tirer le missile");
+							
+		   this.missile = this.vaisseau.tirerUnMissile(dimensionMissile,vitesseMissile);
+      }
+	}
+  
 
