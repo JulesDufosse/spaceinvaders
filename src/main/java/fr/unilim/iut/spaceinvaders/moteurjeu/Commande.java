@@ -16,7 +16,6 @@ public class Commande {
 	public boolean haut;
 	public boolean bas;
 	public boolean tir;
-
 	public Commande()
 	{
 		
