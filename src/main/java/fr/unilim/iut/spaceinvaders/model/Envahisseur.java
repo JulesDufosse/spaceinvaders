@@ -1,10 +1,27 @@
 package fr.unilim.iut.spaceinvaders.model;
 
 public class Envahisseur extends Sprite {
- 
-	public Envahisseur(Dimension dimensionEnvahisseur, Position positionOrigineEnvahisseur, int vitesseEnvahisseur) {
-		this.dimension=dimensionEnvahisseur;
-		this.origine=positionOrigineEnvahisseur;
-		this.vitesse=vitesseEnvahisseur;
+
+	private Direction direction;
+	
+	public Envahisseur(Dimension dimension, Position origine, int vitesse) {
+		super(dimension, origine, vitesse);
+		this.direction = Direction.DROITE;
 	}
+	
+	public Direction getDirection() {
+		return this.direction;
+	}
+
+	public void changerDirection() {
+		if (direction == Direction.GAUCHE)
+			direction = Direction.DROITE;
+		else 
+			direction = Direction.GAUCHE;
+		
+	}
+
 }
+
+
+

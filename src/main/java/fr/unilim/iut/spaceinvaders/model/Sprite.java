@@ -62,11 +62,6 @@ public abstract class Sprite {
 	public int longueur() {
 		return this.dimension.longueur();
 	}
-
-	public void deplacerVersLeHaut() {
-		this.origine.changerOrdonnee(this.origine.ordonnee() - vitesse);
-	}
-
 	public void deplacerVerticalementVers(Direction direction) {
 		this.origine.changerOrdonnee(this.origine.ordonnee() + direction.valeur() * vitesse);
 	}
